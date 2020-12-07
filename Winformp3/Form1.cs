@@ -14,7 +14,7 @@ namespace Winformp3
 {
     public partial class Form1 : Form
     {
-         static SqlConnection conn;
+        SqlConnection conn;
         public Form1()
         {
              InitializeComponent();
@@ -33,7 +33,7 @@ namespace Winformp3
         private void Form1_Load(object sender, EventArgs e)
         {
             conn = new SqlConnection(@"Server=(localdb)\Resources;Database=music;");
-            
+
 
             SqlCommand cmd = new SqlCommand("SELECT * FROM [music]", conn);
             conn.Open();
@@ -50,6 +50,11 @@ namespace Winformp3
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cbalbum_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

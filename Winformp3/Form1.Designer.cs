@@ -86,6 +86,7 @@
             this.cbalbum.Name = "cbalbum";
             this.cbalbum.Size = new System.Drawing.Size(121, 21);
             this.cbalbum.TabIndex = 3;
+            this.cbalbum.SelectedIndexChanged += new System.EventHandler(this.cbalbum_SelectedIndexChanged);
             // 
             // label3
             // 
